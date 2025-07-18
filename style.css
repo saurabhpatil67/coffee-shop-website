@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --main-color: #deab5f;
+  --primary-clor: #312e2e;
+}
+
+/* Utility style */
+button {
+  padding: 10px 30px;
+  background: var(--main-color);
+  border: none;
+  cursor: pointer;
+}
+
+/* Resets */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #100e0f;
+}
+
+/* Nav Start */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  font-family: sans-serif;
+  padding-top: 15px;
+}
+
+li {
+  display: inline;
+  list-style: none;
+}
+
+li a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 40px;
+  padding: 5px;
+}
+
+li a:hover {
+  border-bottom: 2px solid var(--main-color);
+  color: var(--main-color);
+}
+
+/* Nav End  */
+
+/* Header style  */
+.header {
+  background: url(./image/pexels-nao-triponez-129207.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  /* flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.main-headings {
+  position: absolute;
+  top: 6rem;
+  font-size: 3.5rem;
+  word-spacing: 10px;
+}
+
+.primary-headings {
+  position: absolute;
+  bottom: 4rem;
+  font-size: 3.5rem;
+  word-spacing: 10px;
+  margin-bottom: -40px;
+}
+
+.main-btn {
+  position: absolute;
+  bottom: 2rem;
+  padding: 10px 30px;
+  background: transparent;
+  background-color: var(--main-color);
+  transform: translateY(60px);
+}
+
+/* Header end  */
+
+/* Our story style  */
+
+#our-story {
+  /* height: 100vh; */
+  margin-top: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img {
+  width: 400px;
+  height: 400px;
+  background: url(./image/pexels-chitokan-2183027-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.title-style {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  color: #fff;
+  transform: translateX(-100px);
+}
+
+.line {
+  width: 100px;
+  height: 2px;
+  background: #fff;
+  transform: translateX(-120px);
+}
+
+.section-content p {
+  max-width: 500px;
+  color: #fff;
+  font-family: sans-serif;
+  line-height: 20px;
+  margin: 20px 0;
+}
+
+/* Our Story end  */
+
+/* Coffee section start  */
+.coffee-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+}
+
+.img-2 {
+  width: 400px;
+  height: 400px;
+}
+
+.title-two {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+}
+
+.content-section p {
+  max-width: 500px;
+  margin-top: 15px;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.btn-3 {
+  margin-top: 10px;
+}
+
+/* Coffee Section end  */
+
+/* Product Section Start  */
+
+.product {
+  margin-top: 5rem;
+}
+
+.title-three {
+  font-size: 4rem;
+  margin-left: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  border: 2px solid var(--main-color);
+  padding: 0 20px;
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.card-img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -60px;
+}
+
+.img-one {
+  background: url(./image/1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.img-two {
+  background: url(./image/2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.img-three {
+  background: url(./image/3.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.card-title {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 15px;
+  margin-top: 70px;
+}
+
+.card .items p {
+  color: #fff;
+  margin: 20px 0;
+  font-family: sans-serif;
+}
+
+/* Product Section end  */
+
+/* Footer Area style  */
+
+footer {
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: sans-serif;
+
+  border-top: 0.2px solid var(--main-color);
+}
+
+footer .container {
+  margin: 20px;
+  max-width: 362px;
+  text-align: center;
+}
+
+footer .heading-info {
+  margin-bottom: 20px;
+}
+
+footer p {
+  line-height: 25px;
+}
+
+span {
+  color: var(--main-color);
+}
+
+/* footer end  */
+
+/* Media Query  */
+@media screen and (max-width: 768px) {
+  .main-headings,
+  .primary-headings {
+    font-size: 3rem;
+  }
+
+  #our-story {
+    text-align: center;
+  }
+
+  .title {
+    transform: translateX(91px);
+  }
+
+  #our-story .line {
+    display: none;
+  }
+
+  .btn-3 {
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+
+  .title-three {
+    margin-right: 13rem;
+    margin-left: 3.5rem;
+  }
+}
